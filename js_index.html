@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>With JS DOM Manipulation</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      const myelem = document.createElement("h1");
+      const node = document.createTextNode("Hello world from JS");
+      myelem.appendChild(node);
+      document.getElementById("root").appendChild(myelem);
+    </script>
+  </body>
+</html>
